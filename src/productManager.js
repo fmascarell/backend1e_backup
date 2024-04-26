@@ -50,7 +50,7 @@ class ProductManager {
   ) {
     let msg = "Ha ocurrido un error inesperado";
     if (!title || !description || !price || !code || !stock || !category)
-      msg = `Información incompleta, odos los datos son requeridos`;
+      msg = `Información incompleta, todos los datos son requeridos`;
     else {
       const duplicateParam = this.#products.some((item) => item.code == code);
 
@@ -85,9 +85,14 @@ class ProductManager {
   }
 
   getProductById(id) {
+    let status = false;
+    let result = `El producto Id: ${id} mo existe`
     const producto = this.#products.find((item) => item.id == id);
-    if (producto) return producto;
-    else return `Not found product id ${id}`;
+    if (producto){
+        status=true;
+        result = producto; 
+    }
+    return {status,result};
   }
 
   updateProduct(id, updatedProduct) {
