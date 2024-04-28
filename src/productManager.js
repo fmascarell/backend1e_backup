@@ -26,7 +26,7 @@ class ProductManager {
       }
       return [];
     } catch (error) {
-      console.log(`se ha producido el siguiente error: ${error}`);
+      console.log(`Se ha producido el siguiente error: ${error}`);
     }
   }
 
@@ -34,7 +34,7 @@ class ProductManager {
     try {
       fs.writeFileSync(this.#path, JSON.stringify(this.#products));
     } catch (error) {
-      console.log(`se ha producido el siguiente error: ${error}`);
+      console.log(`Se ha producido el siguiente error: ${error}`);
     }
   }
 

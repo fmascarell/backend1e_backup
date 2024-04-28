@@ -2,28 +2,56 @@
     {
         "id": 1,
         "title": "Accesorios",
-        "description": "Lentes mujer",
-        "price": 89990,
-        "thumbnail": "https://www.falabella.com/falabella-cl/product/126477167/Lentes-de-Sol-Traslucent-Brown-Ray-Ban/126477168",
-        "code": "126477168",
-        "stock": 56
+        "description": "Anteojos de Sol Unisex Karun",
+        "price": 59990,
+        "thumbnails": [],
+        "code": "k01-24",
+        "stock": 56,
+        "category": "Lentes",
+        "status": true
+    },
+    {
+        "id": 2,
+        "title": "Accesorios",
+        "description": "Anteojos De Sol Mujer Gris Esprit",
+        "price": 54990,
+        "thumbnails": [],
+        "code": "e01-24",
+        "stock": 25,
+        "category": "Lentes",
+        "status": true
     },
     {
         "id": 3,
         "title": "Accesorios",
-        "description": "Lentes mujer prueba",
-        "price": 140720,
-        "thumbnail": "https://www.prueba.cl",
-        "code": "115342272",
-        "stock": 25
+        "description": "Anteojos de Sol Cascade Rojo Unisex Karun",
+        "price": 75990,
+        "thumbnails": [],
+        "code": "k02-24",
+        "stock": 25,
+        "category": "Lentes",
+        "status": true
     },
     {
         "id": 4,
-        "title": "Accesorios prueba2",
-        "description": "Lentes mujer prueba2",
-        "price": 140720,
-        "thumbnail": "https://www.prueba2.cl",
-        "code": "115342272",
-        "stock": 25
+        "title": "Accesorios",
+        "description": "Gafas De Sol Mujer Rubi",
+        "price": 4990,
+        "thumbnails": [],
+        "code": "r01-24",
+        "stock": 25,
+        "category": "Lentes",
+        "status": true
+    },
+    {
+        "id": 5,
+        "title": "Accesorios",
+        "description": "Lentes de Sol Azul Polarizados Timberland",
+        "price": 112990,
+        "thumbnails": [],
+        "code": "t01-24",
+        "stock": 25,
+        "category": "Lentes",
+        "status": true
     }
 ]

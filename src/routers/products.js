@@ -12,7 +12,7 @@ router.get('/', (req,res) => {
 router.get('/:pid', (req,res) => {
     const {limit} = req.query;
     const prod = new ProductManager();
-    return res.json({ producto: prod.getProductById(Number(pid))});
+    return res.json({ productos: prod.getProductById(Number(pid))});
 });
 
 router.post('/',(req,res)=>{
