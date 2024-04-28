@@ -5,6 +5,7 @@ const router = Router();
 
 router.get('/', (req,res) => {
     const {limit} = req.query;
+    console.log(req.query);
     const prod = new ProductManager();
     return res.json({ productos: prod.getProduct(limit)});
 });
