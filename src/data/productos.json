@@ -53,5 +53,40 @@
         "stock": 25,
         "category": "Lentes",
         "status": true
+    },
+    {
+        "id": 6,
+        "title": "Titulo prueba",
+        "description": "description 1",
+        "price": 12345,
+        "thumbnails": [],
+        "code": "cod12345",
+        "stock": 24,
+        "category": "lentes",
+        "status": true
+    },
+    {
+        "id": 7,
+        "title": "Titulo prueba 1",
+        "description": "description 1",
+        "price": 12345,
+        "thumbnails": [],
+        "code": "cod12346",
+        "stock": 24,
+        "category": "lentes",
+        "status": false
+    },
+    {
+        "id": 8,
+        "title": "Titulo prueba 1",
+        "description": "description 1",
+        "price": 12345,
+        "thumbnails": [
+            "http://prueba"
+        ],
+        "code": "cod12347",
+        "stock": 24,
+        "category": "lentes",
+        "status": false
     }
 ]

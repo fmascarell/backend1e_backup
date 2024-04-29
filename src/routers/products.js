@@ -11,9 +11,9 @@ router.get('/', (req,res) => {
 });
 
 router.get('/:pid', (req,res) => {
-    const {limit} = req.query;
+    const { pid } = req.params; // Obtener pid de los parámetros de la ruta
     const prod = new ProductManager();
-    return res.json({ productos: prod.getProductById(Number(pid))});
+    return res.json({ producto: prod.getProductById(Number(pid))});
 });
 
 router.post('/',(req,res)=>{
@@ -24,14 +24,14 @@ router.post('/',(req,res)=>{
 });
 
 router.put('/:pid',(req,res)=>{
-    const {pid}=req.params;
+    const { pid }=req.params;
     const prod = new ProductManager();
     const resultado = prod.updateProduct(Number(pid),req.body);
     return res.json({resultado});
 });
 
 router.delete('/:pid',(req,res)=>{
-    const {pid}=req.params;
+    const { pid }=req.params;
     const prod = new ProductManager();
     const resultado = prod.deleteProduct(Number(pid));
     return res.json({resultado});
