@@ -23,6 +23,7 @@ class CartsManager {
   #getCartInFile() {
     try {
       if (fs.existsSync(this.#path)) {
+        console.log('Llego hasta aca');
         return JSON.parse(fs.readFileSync(this.#path, "utf-8"));
       }
       return [];
@@ -50,22 +51,22 @@ class CartsManager {
   }
 
   getCartById(id) {
-    const producto = this.#carts.find((item) => item.id == id);
+    const producto = this.#carts.find(item => item.id == id);
     if (producto) return producto;
     else return `Not found product id ${id}`;
   }
 
   addProductInCart(cid,pid){
-    let msg = `El carrito id: ${cid} no existe`;
-    const indexCart = this.#carts.findIndex(c=>c.id = cid);
+    let msg = `El carrito id: ${cid} no existe`; 
+    const indexCart = this.#carts.findIndex(c => c.id === cid);
 
     if (indexCart !== -1){
-        const indexProd = this.#carts[indexCart].products.findIndex(p=>p.id === pid);
+        const indexProd = this.#carts[indexCart].products.findIndex(p => p.id === pid);
         const prod = new ProductManager();
         const producto = prod.getProductById(pid);
 
         if (producto.status && indexProd === -1){
-            this.#carts[indexCart].products.push({id:pid, 'quantity':1});
+            this.#carts[indexCart].products.push({id:pid, 'quantity':1}); 
             this.#setInFile();
             msg = 'Se ha agregado el producto al carro';
         }else if (producto.status && indexProd !== -1){

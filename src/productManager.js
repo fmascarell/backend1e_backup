@@ -72,7 +72,10 @@ class ProductManager {
         };
         this.#products.push(newProduct);
         this.#setInFile();
-        msg = 'Producto agregado exitosamente';
+        msg = {
+          message: 'Producto agregado exitosamente',
+          producto: newProduct
+        }
       }
     }
     return msg;
