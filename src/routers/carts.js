@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import CartsManager from '../cartsManager.js';
+
 const router = Router();
 
 router.get('/:cid',(req,res)=>{
